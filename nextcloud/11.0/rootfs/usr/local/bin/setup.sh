@@ -43,12 +43,12 @@ cat > /nextcloud/config/autoconfig.php <<EOF;
 \$AUTOCONFIG = array (
   # storage/database
   'directory'     => '/data',
-  'dbtype'        => '${DB_TYPE:-sqlite3}',
+  'dbtype'        => "mysql",
   'dbname'        => '${DB_NAME:-nextcloud}',
   'dbuser'        => '${DB_USER:-nextcloud}',
   'dbpass'        => '${DB_PASSWORD:-password}',
-  'dbhost'        => '${DB_HOST:-nextcloud-db}',
-  'dbtableprefix' => 'oc_',
+  'dbhost'        => "192.168.221.250",
+  'dbtableprefix' => 'nc_',
 EOF
 if [[ ! -z "$ADMIN_USER"  ]]; then
   cat >> /nextcloud/config/autoconfig.php <<EOF;
