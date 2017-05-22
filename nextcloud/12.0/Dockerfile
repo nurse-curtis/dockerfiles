@@ -4,7 +4,7 @@ ARG NEXTCLOUD_VERSION=12.0.0
 ARG GPG_nextcloud="2880 6A87 8AE4 23A2 8372  792E D758 99B9 A724 937A"
 
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="11.0.3" \
+      org.freenas.version="12.0.0" \
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.port-mappings="8888:8888/tcp" \
