@@ -144,6 +144,7 @@ RUN BUILD_DEPS=" \
     ca-certificates \
     libsmbclient \
     tzdata \
+    tesseract-ocr \
  && pecl install smbclient apcu redis \
  && echo "extension=smbclient.so" > /php/conf.d/smbclient.ini \
  && echo "extension=redis.so" > /php/conf.d/redis.ini \
